@@ -1,3 +1,4 @@
+import { Row } from '@/components/Row';
 import Banner from '@/components/Banner';
 import Head from 'next/head';
 import Header from '@/components/Header';
@@ -37,13 +38,35 @@ const Home = ({
         {/* Banner */}
         <Banner netflixOriginals={netflixOriginals} />
         <section>
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
+          <Row
+            title='trendingNow'
+            movies={trendingNow}
+          />
+          <Row
+            title='Top Rated'
+            movies={topRated}
+          />
+          <Row
+            title='Action Thrillers'
+            movies={actionMovies}
+          />
+          {/* My list componet */}
+          <Row
+            title='Comedies'
+            movies={comedyMovies}
+          />
+          <Row
+            title='Scary Movies'
+            movies={horrorMovies}
+          />
+          <Row
+            title='Romance Movie'
+            movies={romanceMovies}
+          />
+          <Row
+            title='Documentaries'
+            movies={documentaries}
+          />
         </section>
         {/* modal */}
       </main>

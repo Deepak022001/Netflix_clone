@@ -28,7 +28,6 @@ function Header() {
         />
 
         {/* <BasicMenu /> */}
-
         <ul className='hidden space-x-4 md:flex'>
           <li className='headerLink'>Home</li>
           <li className='headerLink'>TV Shows</li>
@@ -43,15 +42,24 @@ function Header() {
         <p className='hidden lg:inline'>Kids</p>
         <BellIcon className='h-6 w-6' />
         <Link href='/account'>
+          {/* <Image
+            alt=''
+            src='https://rb.gy/g1pwyx'
+            width={100} // Set width to undefined
+            height={100} // Specify the height
+            style={{ objectFit: 'cover' }}
+            className='cursor-pointer rounded'
+          /> */}
           <img
             src='https://rb.gy/g1pwyx'
             alt=''
-            className='cursor-pointer rounded'
+            className='cursor-pointer'
+            // width={100}
+            // height={100}
           />
         </Link>
       </div>
     </header>
   );
 }
-
 export default Header;
