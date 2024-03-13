@@ -1,4 +1,4 @@
-import { Row } from '@/components/Row';
+import Row from '@/components/Row';
 import Banner from '@/components/Banner';
 import Head from 'next/head';
 import Header from '@/components/Header';
@@ -37,9 +37,9 @@ const Home = ({
       <main className='relative pl-4 pb-24 lg:space-y-24 lg:pl-16'>
         {/* Banner */}
         <Banner netflixOriginals={netflixOriginals} />
-        <section>
+        <section className='md:space-y-1'>
           <Row
-            title='trendingNow'
+            title='TrendingNow'
             movies={trendingNow}
           />
           <Row

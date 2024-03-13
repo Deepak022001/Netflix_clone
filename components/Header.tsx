@@ -1,6 +1,5 @@
 import { MagnifyingGlassIcon, BellIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
